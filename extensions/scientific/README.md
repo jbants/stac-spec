@@ -1,6 +1,10 @@
-# Scientific Extension Specification (`sci`)
+# Scientific Extension Specification
 
-**Extension [Maturity Classification](../README.md#extension-maturity): Proposal**
+- **Title: Scientific**
+- **Identifier: scientific**
+- **Field Name Prefix: sci**
+- **Scope: Item, Collection**
+- **Extension [Maturity Classification](../README.md#extension-maturity): Proposal**
 
 Scientific metadata is considered to be data that indicate from which publication a data originates and how
 the data itself should be cited or referenced. Overall, it helps to increase reproducibility and citability.
@@ -12,7 +16,7 @@ can be registered at registration agencies affiliated with the
 
 This extension applies to STAC Items and STAC Collections.
 As these scientific information are often closely bound to the collection level and therefore are shared across all items,
-it is recommended to add the fields to a corresponding [STAC Collection](../../collection-spec/README.md).
+it is recommended adding the fields to the corresponding [STAC Collection](../../collection-spec/README.md).
 
 - Examples: [Collection](examples/collection.json), [Item](examples/item.json)
 - [JSON Schema](json-schema/schema.json)
@@ -26,6 +30,8 @@ For Items, the fields are placed in the `properties`. For Collections, the field
 | sci:doi          | string               | The DOI name of the data, e.g. `10.1000/xyz123`. This MUST NOT be a DOIs link. For all DOI names respective DOI links SHOULD be added to the links section (see chapter "Relation types"). |
 | sci:citation     | string               | The recommended human-readable reference (citation) to be used by publications citing the data. No specific citation style is suggested, but the citation should contain all information required to find the publication distinctively. |
 | sci:publications | [[Publication Object](#publication-object)] | List of relevant publications referencing and describing the data. |
+
+*At least one of the fields must be specified.*
 
 ### Publication Object
 

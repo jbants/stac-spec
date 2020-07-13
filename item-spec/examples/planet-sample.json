@@ -1,7 +1,8 @@
 {
-  "stac_version": "0.8.1",
+  "stac_version": "1.0.0-beta.2",
   "stac_extensions": [
       "eo",
+      "view",
       "https://example.planet.com/stac/1.0/schema.json"
   ],
   "links": [
@@ -61,10 +62,10 @@
   "properties": {
     "datetime": "2017-11-10T12:10:30.535417Z",
     "eo:cloud_cover": 23,
-    "eo:gsd": 3.7,
-    "eo:sun_azimuth": 101.8,
-    "eo:sun_elevation": 58.8,
-    "eo:off_nadir": 1,
+    "gsd": 3.7,
+    "view:sun_azimuth": 101.8,
+    "view:sun_elevation": 58.8,
+    "view:off_nadir": 1,
     "pl:acquired": "2017-11-10T12:10:30.535417Z",
     "pl:anomalous_pixels": 0.14,
     "pl:columns": 9111,
@@ -91,7 +92,7 @@
       "href": "https://api.planet.com/data/v1/item-types/PSScene4Band/items/20171110_121030_1013/thumb",
       "title": "Thumbnail", 
       "status": "active",
-      "role": "thumbnail"
+      "roles": [ "thumbnail" ]
     },
     "analytic": {
       "href": "https://api.planet.com/data/v1/assets/eyJpIjogIjIwMTcxMTEwXzEyMTAxMF8xMDEzIiwgImMiOiAiUFNTY2VuZTRCYW5kIiwgInQiOiAiYW5hbHl0aWMiLCAiY3QiOiAiaXRlbS10eXBlIn0",

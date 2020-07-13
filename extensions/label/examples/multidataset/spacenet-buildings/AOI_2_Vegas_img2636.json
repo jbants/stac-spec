@@ -1,7 +1,8 @@
 {
-  "stac_version": "0.8.1",
+  "stac_version": "1.0.0-beta.2",
   "stac_extensions": [
-    "label"
+    "label",
+    "version"
   ],
   "id": "AOI_2_Vegas_img2636",
   "type": "Feature",
@@ -13,10 +14,10 @@
   ],
   "geometry": {
     "type": "Polygon",
-    "coordinates": [
+    "coordinates": [[
       [
         -115.23556259985658,
-        36.12654269972625,
+        36.12654269972625
       ],
       [
         -115.23556259985658,
@@ -28,9 +29,9 @@
       ],
       [
         -115.23412932899998,
-        36.12654269972625,
+        36.12654269972625
       ]
-    ]
+    ]]
   },
   "assets": {
     "labels": {
@@ -58,7 +59,7 @@
     "label:methods": [
       "manual"
     ],
-    "version": 1,
+    "version": "1",
     "label:classes": [
       {
         "name": "OBJECTID_1",

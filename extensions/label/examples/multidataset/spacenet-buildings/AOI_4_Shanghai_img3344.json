@@ -1,7 +1,8 @@
 {
-  "stac_version": "0.8.1",
+  "stac_version": "1.0.0-beta.2",
   "stac_extensions": [
-    "label"
+    "label",
+    "version"
   ],
   "id": "AOI_4_Shanghai_img3344",
   "type": "Feature",
@@ -13,10 +14,10 @@
   ],
   "geometry": {
     "type": "Polygon",
-    "coordinates": [
+    "coordinates": [[
       [
         121.66563419996653,
-        31.234725900085653,
+        31.234725900085653
       ],
       [
         121.66563419996653,
@@ -30,7 +31,7 @@
         121.66738919996575,
         31.234725900085653
       ]
-    ]
+    ]]
   },
   "assets": {
     "labels": {
@@ -58,7 +59,7 @@
     "label:methods": [
       "manual"
     ],
-    "version": 1,
+    "version": "1",
     "label:classes": [
       {
         "name": "OBJECTID_1",

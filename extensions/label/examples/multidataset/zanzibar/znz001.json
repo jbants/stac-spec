@@ -1,7 +1,8 @@
 {
-  "stac_version": "0.8.1",
+  "stac_version": "1.0.0-beta.2",
   "stac_extensions": [
-    "label"
+    "label",
+    "version"
   ],
   "id": "znz001",
   "type": "Feature",
@@ -13,10 +14,10 @@
   ],
   "geometry": {
     "type": "Polygon",
-    "coordinates": [
+    "coordinates": [[
       [
         39.28919876472999,
-        -5.743028283012867,
+        -5.743028283012867
       ],
       [
         39.31302874892266,
@@ -30,6 +31,7 @@
         39.28919876472999,
         -5.722212794937691
       ]
+    ]]
   },
   "assets": {
     "labels": {
@@ -63,7 +65,7 @@
     "label:methods": [
       "manual"
     ],
-    "version": 1,
+    "version": "1",
     "label:classes": [
       {
         "name": "building",
